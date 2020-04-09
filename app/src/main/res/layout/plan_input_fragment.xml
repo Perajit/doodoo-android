@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.plan.PlanFragment">
+    tools:context=".ui.planInput.PlanInputFragment">
 
     <TextView
         android:id="@+id/planMessage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="PlanFragment" />
+        android:text="PlanInputFragment" />
 
 </FrameLayout>

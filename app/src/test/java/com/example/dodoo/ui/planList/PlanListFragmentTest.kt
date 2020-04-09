@@ -1,4 +1,4 @@
-package com.example.dodoo.ui.main
+package com.example.dodoo.ui.planList
 
 import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
@@ -18,9 +18,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class MainFragmentTest {
+class PlanListFragmentTest {
 
-    lateinit var scenario: FragmentScenario<MainFragment>
+    lateinit var scenario: FragmentScenario<PlanListFragment>
 
     @Before
     fun setUp() {
@@ -29,7 +29,7 @@ class MainFragmentTest {
 
     @Test
     fun `display content`() {
-        onView(withId(R.id.message)).check(matches(withText("MainFragment")))
+        onView(withId(R.id.message)).check(matches(withText("PlanListFragment")))
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.example.dodoo.ui.plan
+package com.example.dodoo.ui.planInput
 
 import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
@@ -8,15 +8,14 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.dodoo.R
-import com.example.dodoo.ui.main.MainFragment
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class PlanFragmentTest {
+class PlanInputFragmentTest {
 
-    lateinit var scenario: FragmentScenario<PlanFragment>
+    lateinit var scenario: FragmentScenario<PlanInputFragment>
 
     @Before
     fun setUp() {
@@ -25,7 +24,7 @@ class PlanFragmentTest {
 
     @Test
     fun `display content`() {
-        onView(withId(R.id.planMessage)).check(matches(withText("PlanFragment")))
+        onView(withId(R.id.planMessage)).check(matches(withText("PlanInputFragment")))
     }
 
 }

@@ -1,4 +1,4 @@
-package com.example.dodoo.ui.plan
+package com.example.dodoo.ui.planInput
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,24 +9,24 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.dodoo.R
 
 
-class PlanFragment : Fragment() {
+class PlanInputFragment : Fragment() {
 
     companion object {
-        fun newInstance() = PlanFragment()
+        fun newInstance() = PlanInputFragment()
     }
 
-    private lateinit var viewModel: PlanViewModel
+    private lateinit var viewModel: PlanInputViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.plan_fragment, container, false)
+        return inflater.inflate(R.layout.plan_input_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PlanViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(PlanInputViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

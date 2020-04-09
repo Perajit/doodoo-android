@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.dodoo.ui.main.MainFragment"
+        android:name="com.example.dodoo.ui.planList.PlanListFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" >
+        tools:layout="@layout/plan_list_fragment" >
         <action
             android:id="@+id/action_mainFragment_to_planFragment"
             app:destination="@id/planFragment" />
@@ -17,9 +17,9 @@
 
     <fragment
         android:id="@+id/planFragment"
-        android:name="com.example.dodoo.ui.plan.PlanFragment"
+        android:name="com.example.dodoo.ui.planInput.PlanInputFragment"
         android:label="plan_fragment"
-        tools:layout="@layout/plan_fragment" >
+        tools:layout="@layout/plan_input_fragment" >
     </fragment>
 
 </navigation>
