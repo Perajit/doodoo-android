@@ -29,7 +29,8 @@ class PlanListFragmentTest {
 
     @Test
     fun `display content`() {
-        onView(withId(R.id.message)).check(matches(withText("PlanListFragment")))
+        onView(withId(R.id.plan_list_view)).check(matches(isCompletelyDisplayed()))
+        onView(withId(R.id.add_plan_button)).check(matches(isCompletelyDisplayed()))
     }
 
     @Test
@@ -41,8 +42,9 @@ class PlanListFragmentTest {
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
 
-        onView(withId(R.id.addPlanButton)).perform(click())
+        onView(withId(R.id.add_plan_button)).perform(click())
 
         assertThat(navController.currentDestination?.id, equalTo(R.id.planFragment))
     }
+
 }
