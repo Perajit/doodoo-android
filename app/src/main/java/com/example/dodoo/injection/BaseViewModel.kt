@@ -8,7 +8,7 @@ abstract class BaseViewModel : ViewModel() {
 
     private val injector: ViewModelInjector = DaggerViewModelInjector
         .builder()
-        .planModule(PlanModule)
+        .sharedModule(SharedModule)
         .build()
 
     init {

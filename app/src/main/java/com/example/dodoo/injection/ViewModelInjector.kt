@@ -6,7 +6,7 @@ import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [PlanModule::class])
+@Component(modules = [SharedModule::class])
 interface ViewModelInjector {
 
     fun inject(planListViewModel: PlanListViewModel)
@@ -15,7 +15,7 @@ interface ViewModelInjector {
     @Component.Builder
     interface Builder {
         fun build(): ViewModelInjector
-        fun planModule(planModule: PlanModule): Builder
+        fun sharedModule(sharedModule: SharedModule): Builder
     }
 
 }

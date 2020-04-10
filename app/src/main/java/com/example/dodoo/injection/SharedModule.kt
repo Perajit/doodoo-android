@@ -6,7 +6,7 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-object PlanModule {
+object SharedModule {
 
     @Singleton
     @Provides
