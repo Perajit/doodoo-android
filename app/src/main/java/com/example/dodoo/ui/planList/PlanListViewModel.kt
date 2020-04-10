@@ -1,9 +1,14 @@
 package com.example.dodoo.ui.planList
 
-import androidx.lifecycle.ViewModel
+import com.example.dodoo.data.PlanRepository
+import com.example.dodoo.injection.BaseViewModel
+import javax.inject.Inject
 
-class PlanListViewModel : ViewModel() {
+class PlanListViewModel : BaseViewModel() {
 
-//    val planList by lazy { planRepository.getPlanList() }
+    @Inject
+    lateinit var planRepository: PlanRepository
+
+    val planList by lazy { planRepository.getPlanList() }
 
 }

@@ -1,7 +1,12 @@
 package com.example.dodoo.ui.planInput
 
-import androidx.lifecycle.ViewModel
+import com.example.dodoo.data.PlanRepository
+import com.example.dodoo.injection.BaseViewModel
+import javax.inject.Inject
 
-class PlanInputViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+class PlanInputViewModel : BaseViewModel() {
+
+    @Inject
+    lateinit var planRepository: PlanRepository
+
 }

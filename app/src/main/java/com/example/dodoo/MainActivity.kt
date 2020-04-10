@@ -1,8 +1,7 @@
 package com.example.dodoo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.dodoo.ui.main.MainFragment
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,4 +14,5 @@ class MainActivity : AppCompatActivity() {
 //                    .commitNow()
 //        }
     }
+
 }
